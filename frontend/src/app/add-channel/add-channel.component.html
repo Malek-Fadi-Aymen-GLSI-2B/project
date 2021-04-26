@@ -1,0 +1,40 @@
+<app-nav></app-nav>
+<div class="blank"></div>
+<div class="container bg-light">
+    <div>
+        <h2> Add Channel : </h2>
+    </div>
+    <form>
+        <div class="col-sm-12 col-lg-6">
+            <label> Name of channel </label>
+            <input type="text" [(ngModel)]="newChannel.nameChannel" 
+                name="nameChannel" class="form-control">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <label> Link </label>
+            <input type="text" [(ngModel)]="newChannel.link" 
+                name="link" class="form-control">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <label> Type </label>
+            <input type="text" [(ngModel)]="newChannel.type" 
+                name="type" class="form-control">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <label> Description </label>
+            <input type="text" [(ngModel)]="newChannel.description" 
+                name="description" class="form-control">
+        </div>
+        
+        <div class="col-sm-12 col-lg-6">
+            <label> Country Name </label>
+            <input type="text" [(ngModel)]="country" 
+                name="country" class="form-control">
+        </div>
+
+        <div class="mt-2">
+            <button type="submit" (click)="onAddChannel()"  class="btn btn-success disp">Add</button>
+            <button type="submit" class="btn btn-danger disp" routerLink="/manage">Cancel</button>
+        </div>
+    </form>
+</div>

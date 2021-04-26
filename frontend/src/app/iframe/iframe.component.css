@@ -1,0 +1,24 @@
+.bi-play-ill {
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (min-width: 992px) {
+    iframe {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    iframe {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.border-at {
+    width: auto;
+    height: auto;
+    border: 3px black solid;
+}

@@ -1,0 +1,35 @@
+.navbar-brand {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.border-for {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 3px;
+    border: 2px black solid;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.bar {
+    background-color: black;
+    height: 5px;
+    width: 100%;
+}
+
+.margin-mod {
+    float: left;
+}

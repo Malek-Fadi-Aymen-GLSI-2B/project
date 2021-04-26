@@ -1,0 +1,11 @@
+@media screen and (min-width: 540px) {
+    .blank {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .blank {
+        height: 20px;
+    }
+}

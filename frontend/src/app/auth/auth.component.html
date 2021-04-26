@@ -1,0 +1,42 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="card bg-light">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12"></div>
+            <div class="col-lg-4 col-sm-12">
+                <article class="card-body">
+                    <h4 class="card-title mt-3 text-center">Connect to your account</h4>
+                    <p class="text-center"> Welcome back</p>
+                    <div class="alert alert-danger" role="alert" *ngIf="error == 1">
+                         Wrong password. Try again !
+                    </div>
+                    <form>
+                        <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                          </svg> </span>
+                            </div>
+                            <input name="email" class="form-control" placeholder="Email address" type="email" [(ngModel)]="user.email">
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                          </svg> </span>
+                            </div>
+                            <input class="form-control" placeholder="password" type="password" [(ngModel)]="user.password" name="password">
+                        </div>
+                        <!-- form-group// -->
+                        <div class="form-group">
+                            <button type="button" class="btn btn-dark btn-block" (click)="onSignIn()"> Connect  </button>
+                        </div>
+                        <p class="text-center">Don't have an account? <a routerLink="/register">Sign In</a> </p>
+                    </form>
+                </article>
+            </div>
+            <!-- card.// -->
+        </div> 
+    </div>
+</div>
